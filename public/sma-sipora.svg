@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="60%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- Mountain Gradient -->
+    <linearGradient id="mountainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#166534" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Roof Gradient -->
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Building Wall -->
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Lawn Gradient -->
+    <linearGradient id="lawnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="30%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+
+    <!-- Ground Dirt Gradient -->
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ca8a04" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#854d0e" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- SKY BACKGROUND -->
+  <rect width="1200" height="800" fill="url(#skyGrad)"/>
+
+  <!-- CLOUDS -->
+  <path d="M 150 120 Q 180 90 220 100 Q 260 80 300 100 Q 330 110 340 130 Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M 650 90 Q 690 60 740 70 Q 790 50 840 80 Q 870 90 880 110 Z" fill="#ffffff" opacity="0.85"/>
+  <path d="M 950 140 Q 980 120 1020 130 Q 1060 110 1090 130 Z" fill="#ffffff" opacity="0.8"/>
+
+  <!-- TROPICAL HILLS / MOUNTAINS IN BACKGROUND -->
+  <path d="M 0 380 Q 200 240 450 320 Q 700 220 950 310 Q 1100 260 1200 330 L 1200 500 L 0 500 Z" fill="url(#mountainGrad)"/>
+
+  <!-- BACKGROUND TREES / PALMS / JUNGLE CANOPY -->
+  <g fill="#14532d">
+    <!-- Tree shapes behind main building -->
+    <circle cx="80" cy="340" r="45"/>
+    <circle cx="130" cy="330" r="50"/>
+    <circle cx="200" cy="320" r="40"/>
+    <circle cx="500" cy="300" r="35"/>
+    <circle cx="550" cy="290" r="40"/>
+    <circle cx="600" cy="300" r="35"/>
+    <circle cx="780" cy="310" r="45"/>
+    <circle cx="840" cy="290" r="55"/>
+    <circle cx="920" cy="280" r="60"/>
+    <circle cx="1000" cy="300" r="50"/>
+    <circle cx="1120" cy="310" r="65"/>
+
+    <!-- Coconut Palms on Right/Left -->
+    <!-- Left Palm Trunk & Fronds -->
+    <path d="M 40 420 Q 30 330 20 270" stroke="#78350f" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 20 270 Q -20 250 -40 280 M 20 270 Q 10 220 30 210 M 20 270 Q 60 230 70 260 M 20 270 Q 40 290 50 310" stroke="#15803d" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- Right Palm Trunk & Fronds -->
+    <path d="M 1150 420 Q 1160 310 1170 230" stroke="#78350f" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M 1170 230 Q 1120 200 1100 240 M 1170 230 Q 1160 170 1180 160 M 1170 230 Q 1210 190 1230 220" stroke="#166534" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- MAIN SCHOOL COURT / LAWN -->
+  <polygon points="0,480 1200,480 1200,800 0,800" fill="url(#lawnGrad)"/>
+
+  <!-- FOREGROUND DIRT COURT / FIELD AREA -->
+  <path d="M 0 570 C 300 550, 600 580, 1200 560 L 1200 800 L 0 800 Z" fill="url(#groundGrad)"/>
+
+  <!-- SCHOOL BUILDINGS (SMAN 1 SIPORA) -->
+  
+  <!-- 1. LEFT SIDE ANNEX / CLASSROOM BUILDING -->
+  <g id="left-building">
+    <polygon points="0,410 90,410 90,480 0,480" fill="url(#wallGrad)"/>
+    <polygon points="-20,410 100,410 80,380 -10,380" fill="url(#roofGrad)"/>
+    <!-- Windows & Door -->
+    <rect x="15" y="430" width="20" height="30" fill="#78350f"/>
+    <rect x="45" y="430" width="30" height="25" fill="#0284c7" opacity="0.8"/>
+  </g>
+
+  <!-- 2. MAIN CENTRAL BUILDING (GEDUNG UTAMA SMAN 1 SIPORA) -->
+  <g id="main-building">
+    <!-- Main Wall -->
+    <polygon points="120,380 780,380 780,480 120,480" fill="url(#wallGrad) stroke="#cbd5e1" stroke-width="2"/>
+    
+    <!-- Large Gable Roof -->
+    <polygon points="100,380 800,380 750,310 150,310" fill="url(#roofGrad)"/>
+    <polygon points="150,310 450,260 750,310" fill="#334155"/> <!-- Central Peak Roof -->
+
+    <!-- Pillars / Veranda Portico -->
+    <g fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5">
+      <rect x="140" y="380" width="10" height="100"/>
+      <rect x="200" y="380" width="10" height="100"/>
+      <rect x="260" y="380" width="10" height="100"/>
+      <rect x="320" y="380" width="10" height="100"/>
+      <rect x="380" y="380" width="10" height="100"/>
+      <rect x="440" y="380" width="10" height="100"/>
+      <rect x="500" y="380" width="10" height="100"/>
+      <rect x="560" y="380" width="10" height="100"/>
+      <rect x="620" y="380" width="10" height="100"/>
+      <rect x="680" y="380" width="10" height="100"/>
+      <rect x="740" y="380" width="10" height="100"/>
+    </g>
+
+    <!-- Windows & Doors behind pillars -->
+    <g fill="#0284c7" opacity="0.75">
+      <rect x="160" y="400" width="30" height="45" rx="2"/>
+      <rect x="220" y="400" width="30" height="45" rx="2"/>
+      <rect x="280" y="400" width="30" height="45" rx="2"/>
+      <rect x="340" y="395" width="30" height="65" fill="#78350f"/> <!-- Main Entrance -->
+      <rect x="400" y="400" width="30" height="45" rx="2"/>
+      <rect x="460" y="400" width="30" height="45" rx="2"/>
+      <rect x="520" y="400" width="30" height="45" rx="2"/>
+      <rect x="580" y="400" width="30" height="45" rx="2"/>
+      <rect x="640" y="400" width="30" height="45" rx="2"/>
+      <rect x="700" y="400" width="30" height="45" rx="2"/>
+    </g>
+  </g>
+
+  <!-- 3. RIGHT SIDE CLASSROOM WING -->
+  <g id="right-building">
+    <polygon points="820,400 1180,400 1180,480 820,480" fill="url(#wallGrad) stroke="#cbd5e1" stroke-width="2"/>
+    <polygon points="800,400 1200,400 1160,340 840,340" fill="url(#roofGrad)"/>
+    <!-- Windows -->
+    <g fill="#0369a1" opacity="0.7">
+      <rect x="850" y="415" width="35" height="40"/>
+      <rect x="910" y="415" width="35" height="40"/>
+      <rect x="970" y="415" width="35" height="40"/>
+      <rect x="1030" y="415" width="35" height="40"/>
+      <rect x="1090" y="415" width="35" height="40"/>
+    </g>
+  </g>
+
+  <!-- INDONESIAN FLAGPOLE & BENDERA MERAH PUTIH -->
+  <g id="flagpole">
+    <!-- Pole -->
+    <line x1="560" y1="200" x2="560" y2="480" stroke="#f8fafc" stroke-width="4"/>
+    <circle cx="560" cy="198" r="4" fill="#e2e8f0"/>
+    <!-- Flag (Merah Putih) -->
+    <rect x="560" y="205" width="55" height="18" fill="#dc2626"/> <!-- Red -->
+    <rect x="560" y="223" width="55" height="18" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/> <!-- White -->
+  </g>
+
+  <!-- PEMBINA UPACARA & GURU (STANDING IN FRONT OF MAIN BUILDING) -->
+  <g id="teachers">
+    <!-- Pembina Upacara in front of flag -->
+    <circle cx="615" cy="460" r="5" fill="#78350f"/> <!-- Head -->
+    <rect x="610" y="465" width="10" height="20" fill="#ca8a04"/> <!-- PGRI/PNS Khaki shirt -->
+    <rect x="611" y="485" width="8" height="18" fill="#451a03"/> <!-- Dark Pants -->
+
+    <!-- Row of teachers on the verandah -->
+    <g fill="#78350f">
+      <rect x="640" y="468" width="6" height="15" fill="#ca8a04"/>
+      <rect x="652" y="468" width="6" height="15" fill="#ca8a04"/>
+      <rect x="664" y="468" width="6" height="15" fill="#ca8a04"/>
+      <rect x="676" y="468" width="6" height="15" fill="#ca8a04"/>
+      <rect x="688" y="468" width="6" height="15" fill="#ca8a04"/>
+    </g>
+  </g>
+
+  <!-- PRAMUKA STUDENTS IN FORMATION (BARISAN SISWA ANGGOTA PRAMUKA) -->
+  <!-- Colors:
+       Shirt: #d97706 (Coklat Muda Pramuka / Khaki-Amber)
+       Pants/Skirt: #78350f (Coklat Tua)
+       Kacu/Hasduk: #dc2626 & #ffffff
+  -->
+
+  <!-- LEFT GROUP OF STUDENTS (BARISAN KIRI) -->
+  <g id="students-left-group">
+    <!-- Row 1 (Front) -->
+    <g fill="#d97706">
+      <!-- Repeated student shapes standing in formation -->
+      <path d="M 50,510 h 12 v 25 h -12 z M 75,510 h 12 v 25 h -12 z M 100,510 h 12 v 25 h -12 z M 125,510 h 12 v 25 h -12 z M 150,510 h 12 v 25 h -12 z M 175,510 h 12 v 25 h -12 z M 200,510 h 12 v 25 h -12 z M 225,510 h 12 v 25 h -12 z M 250,510 h 12 v 25 h -12 z M 275,510 h 12 v 25 h -12 z M 300,510 h 12 v 25 h -12 z M 325,510 h 12 v 25 h -12 z M 350,510 h 12 v 25 h -12 z M 375,510 h 12 v 25 h -12 z M 400,510 h 12 v 25 h -12 z M 425,510 h 12 v 25 h -12 z"/>
+    </g>
+    <!-- Heads & Pants -->
+    <g fill="#78350f">
+      <!-- Heads -->
+      <circle cx="56" cy="503" r="5"/><circle cx="81" cy="503" r="5"/><circle cx="106" cy="503" r="5"/><circle cx="131" cy="503" r="5"/><circle cx="156" cy="503" r="5"/><circle cx="181" cy="503" r="5"/><circle cx="206" cy="503" r="5"/><circle cx="231" cy="503" r="5"/><circle cx="256" cy="503" r="5"/><circle cx="281" cy="503" r="5"/><circle cx="306" cy="503" r="5"/><circle cx="331" cy="503" r="5"/><circle cx="356" cy="503" r="5"/><circle cx="381" cy="503" r="5"/><circle cx="406" cy="503" r="5"/><circle cx="431" cy="503" r="5"/>
+      <!-- Pants/Skirts -->
+      <path d="M 50,535 h 12 v 20 h -12 z M 75,535 h 12 v 20 h -12 z M 100,535 h 12 v 20 h -12 z M 125,535 h 12 v 20 h -12 z M 150,535 h 12 v 20 h -12 z M 175,535 h 12 v 20 h -12 z M 200,535 h 12 v 20 h -12 z M 225,535 h 12 v 20 h -12 z M 250,535 h 12 v 20 h -12 z M 275,535 h 12 v 20 h -12 z M 300,535 h 12 v 20 h -12 z M 325,535 h 12 v 20 h -12 z M 350,535 h 12 v 20 h -12 z M 375,535 h 12 v 20 h -12 z M 400,535 h 12 v 20 h -12 z M 425,535 h 12 v 20 h -12 z"/>
+    </g>
+
+    <!-- Row 2 (Middle) -->
+    <g fill="#b45309">
+      <path d="M 40,490 h 12 v 22 h -12 z M 65,490 h 12 v 22 h -12 z M 90,490 h 12 v 22 h -12 z M 115,490 h 12 v 22 h -12 z M 140,490 h 12 v 22 h -12 z M 165,490 h 12 v 22 h -12 z M 190,490 h 12 v 22 h -12 z M 215,490 h 12 v 22 h -12 z M 240,490 h 12 v 22 h -12 z M 265,490 h 12 v 22 h -12 z M 290,490 h 12 v 22 h -12 z M 315,490 h 12 v 22 h -12 z M 340,490 h 12 v 22 h -12 z M 365,490 h 12 v 22 h -12 z M 390,490 h 12 v 22 h -12 z M 415,490 h 12 v 22 h -12 z"/>
+    </g>
+    <g fill="#451a03">
+      <circle cx="46" cy="484" r="4.5"/><circle cx="71" cy="484" r="4.5"/><circle cx="96" cy="484" r="4.5"/><circle cx="121" cy="484" r="4.5"/><circle cx="146" cy="484" r="4.5"/><circle cx="171" cy="484" r="4.5"/><circle cx="196" cy="484" r="4.5"/><circle cx="221" cy="484" r="4.5"/><circle cx="246" cy="484" r="4.5"/><circle cx="271" cy="484" r="4.5"/><circle cx="296" cy="484" r="4.5"/><circle cx="321" cy="484" r="4.5"/><circle cx="346" cy="484" r="4.5"/><circle cx="371" cy="484" r="4.5"/><circle cx="396" cy="484" r="4.5"/><circle cx="421" cy="484" r="4.5"/>
+    </g>
+  </g>
+
+  <!-- RIGHT GROUP OF STUDENTS (BARISAN KANAN) -->
+  <g id="students-right-group">
+    <!-- Row 1 (Front) -->
+    <g fill="#d97706">
+      <path d="M 730,510 h 12 v 25 h -12 z M 755,510 h 12 v 25 h -12 z M 780,510 h 12 v 25 h -12 z M 805,510 h 12 v 25 h -12 z M 830,510 h 12 v 25 h -12 z M 855,510 h 12 v 25 h -12 z M 880,510 h 12 v 25 h -12 z M 905,510 h 12 v 25 h -12 z M 930,510 h 12 v 25 h -12 z M 955,510 h 12 v 25 h -12 z M 980,510 h 12 v 25 h -12 z M 1005,510 h 12 v 25 h -12 z M 1030,510 h 12 v 25 h -12 z M 1055,510 h 12 v 25 h -12 z M 1080,510 h 12 v 25 h -12 z M 1105,510 h 12 v 25 h -12 z M 1130,510 h 12 v 25 h -12 z"/>
+    </g>
+    <g fill="#78350f">
+      <circle cx="736" cy="503" r="5"/><circle cx="761" cy="503" r="5"/><circle cx="786" cy="503" r="5"/><circle cx="811" cy="503" r="5"/><circle cx="836" cy="503" r="5"/><circle cx="861" cy="503" r="5"/><circle cx="886" cy="503" r="5"/><circle cx="911" cy="503" r="5"/><circle cx="936" cy="503" r="5"/><circle cx="961" cy="503" r="5"/><circle cx="986" cy="503" r="5"/><circle cx="1011" cy="503" r="5"/><circle cx="1036" cy="503" r="5"/><circle cx="1061" cy="503" r="5"/><circle cx="1086" cy="503" r="5"/><circle cx="1111" cy="503" r="5"/><circle cx="1136" cy="503" r="5"/>
+      <path d="M 730,535 h 12 v 20 h -12 z M 755,535 h 12 v 20 h -12 z M 780,535 h 12 v 20 h -12 z M 805,535 h 12 v 20 h -12 z M 830,535 h 12 v 20 h -12 z M 855,535 h 12 v 20 h -12 z M 880,535 h 12 v 20 h -12 z M 905,535 h 12 v 20 h -12 z M 930,535 h 12 v 20 h -12 z M 955,535 h 12 v 20 h -12 z M 980,535 h 12 v 20 h -12 z M 1005,535 h 12 v 20 h -12 z M 1030,535 h 12 v 20 h -12 z M 1055,535 h 12 v 20 h -12 z M 1080,535 h 12 v 20 h -12 z M 1105,535 h 12 v 20 h -12 z M 1130,535 h 12 v 20 h -12 z"/>
+    </g>
+
+    <!-- Row 2 (Middle) -->
+    <g fill="#b45309">
+      <path d="M 740,490 h 12 v 22 h -12 z M 765,490 h 12 v 22 h -12 z M 790,490 h 12 v 22 h -12 z M 815,490 h 12 v 22 h -12 z M 840,490 h 12 v 22 h -12 z M 865,490 h 12 v 22 h -12 z M 890,490 h 12 v 22 h -12 z M 915,490 h 12 v 22 h -12 z M 940,490 h 12 v 22 h -12 z M 965,490 h 12 v 22 h -12 z M 990,490 h 12 v 22 h -12 z M 1015,490 h 12 v 22 h -12 z M 1040,490 h 12 v 22 h -12 z M 1065,490 h 12 v 22 h -12 z M 1090,490 h 12 v 22 h -12 z M 1115,490 h 12 v 22 h -12 z"/>
+    </g>
+    <g fill="#451a03">
+      <circle cx="746" cy="484" r="4.5"/><circle cx="771" cy="484" r="4.5"/><circle cx="796" cy="484" r="4.5"/><circle cx="821" cy="484" r="4.5"/><circle cx="846" cy="484" r="4.5"/><circle cx="871" cy="484" r="4.5"/><circle cx="896" cy="484" r="4.5"/><circle cx="921" cy="484" r="4.5"/><circle cx="946" cy="484" r="4.5"/><circle cx="971" cy="484" r="4.5"/><circle cx="996" cy="484" r="4.5"/><circle cx="1021" cy="484" r="4.5"/><circle cx="1046" cy="484" r="4.5"/><circle cx="1071" cy="484" r="4.5"/><circle cx="1096" cy="484" r="4.5"/><circle cx="1121" cy="484" r="4.5"/>
+    </g>
+  </g>
+
+  <!-- BANNER LABEL TEXT AT BOTTOM -->
+  <rect x="350" y="730" width="500" height="45" rx="12" fill="#0f172a" opacity="0.92" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="600" y="758" font-family="sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    APEL SMAN 1 SIPORA • KEPULAUAN MENTAWAI
+  </text>
+</svg>

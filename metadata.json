@@ -1,0 +1,6 @@
+{
+  "name": "Sistem Informasi Kelulusan SMAN 1 Sipora",
+  "description": "Sistem Informasi Kelulusan Siswa Kelas XII Berbasis Web SMA Negeri 1 Sipora - Kabupaten Kepulauan Mentawai",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
