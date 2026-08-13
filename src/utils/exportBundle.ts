@@ -214,6 +214,12 @@ export default defineConfig({
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistem Informasi Kelulusan & SKL Digital SMAN 1 Sipora</title>
+    <meta name="title" content="Sistem Informasi Kelulusan & SKL Digital SMAN 1 Sipora" />
+    <meta name="description" content="Sistem Informasi Kelulusan & Pengumuman Kelulusan Siswa Kelas XII SMAN 1 Sipora - Kabupaten Kepulauan Mentawai" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sistem Informasi Kelulusan & SKL Digital SMAN 1 Sipora" />
+    <meta property="og:description" content="Sistem Informasi Kelulusan & Pengumuman Kelulusan Siswa Kelas XII SMAN 1 Sipora - Kabupaten Kepulauan Mentawai" />
+    <meta property="og:site_name" content="SMAN 1 Sipora" />
   </head>
   <body class="bg-slate-900 text-slate-100 antialiased selection:bg-emerald-500 selection:text-white">
     <div id="root"></div>

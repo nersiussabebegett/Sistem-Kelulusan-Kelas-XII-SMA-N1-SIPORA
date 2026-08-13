@@ -116,14 +116,7 @@ export const CekKelulusanView: React.FC<CekKelulusanViewProps> = ({
             </p>
           </div>
 
-          <div className="pt-2">
-            <button
-              onClick={() => setForceOpenAnnouncement(true)}
-              className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:underline"
-            >
-              [ Mode Simulasi / Preview Pengujian ]
-            </button>
-          </div>
+
         </div>
       ) : (
         /* Form Search Section */
